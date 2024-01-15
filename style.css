@@ -1,0 +1,44 @@
+#div_1{
+    width: 90%;
+}
+#small_div{
+    width:50%;
+    border-radius: 15px;
+}
+#webcamview{
+float: left; 
+margin-left: 40px;
+}
+#identifyview{
+    float: right; 
+    margin-right: 40px;
+    
+}
+
+#camera
+{
+  border: 2px dashed magenta;
+  width: 350px;
+  height: 270px; 
+}
+#camera_result
+{
+  border: 2px dashed magenta;
+  width: 350px;
+  height: 270px; 
+}
+#divresult{
+    float: center;
+}
+#object_result, #accuracy_result, #object_r, #accuracy_r{
+    font-size: 20px;
+    color: magenta;
+    background-color: pink;
+    width: 210;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+#results{
+float: center;
+}

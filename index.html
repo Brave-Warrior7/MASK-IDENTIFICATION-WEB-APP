@@ -1,0 +1,71 @@
+<html>
+   <head>
+     <title>Mask Identification</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  </head>
+
+  <body background="mask.jpg">
+    <br>
+     <center>
+         <div id="div_1" class="btn btn-primary"> 
+             <h3>Mask Identification Web App</h3>
+             <hr>
+             <div id="small_div" class="btn btn-success">
+                <h4 style="font-family: 'Cedarville Cursive', cursive;">Model is Trained on Mask Identification</h4>
+                <label class="btn btn-info"> Proper Mask/ Improper Mask/ No Mask</label>
+             </div>
+             <br>
+             <br>
+         </div>
+         <br>
+         <br>
+         <div id="results">
+            <h3 id="object_r">Object:<span id="object_result"></span></h3>
+            
+            <h3 id="accuracy_r" >Acuracy:<span id="object_accuracy"></span></h3>
+         </div>
+
+
+
+       <div id="webcamview" class="col-md-4 col-sm-12 col-xs-12">
+          <h4 style="    font-size: 20px;
+          color: magenta;
+          background-color: pink;
+          width: 140;
+          border-radius: 5px;
+          font-weight: bold;
+          ">Webcam view</h4>
+          <br>
+          <div id="camera"></div>
+          <br>
+          <button id="capture_Image" onclick="take_snapshot()" class="btn btn-primary">Capture Image</button>
+          <br><br>
+       </div>
+
+     
+       <div id="identifyview" class="col-md-4 col-sm-12 col-xs-12">
+          <h4 style="    font-size: 20px;
+          color: magenta;
+          background-color: pink;
+          width: 120;
+          border-radius: 5px;
+          font-weight: bold;
+          ">Result view</h4>
+          <br>
+          <div id="camera_result"></div>
+          <br>
+          <button id="Identify_Image" onclick="identify_snap()" class="btn btn-primary">Identify Image</button>
+          <br><br>
+       </div>
+     </center>
+  </body>
+  <script src="main.js"></script>
+</html>
